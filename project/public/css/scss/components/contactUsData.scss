@@ -1,0 +1,29 @@
+#contact-us-data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    .title {
+        font-size: 18px !important;
+        color: black;
+        font-weight: bold;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-size: 16px !important;
+            color: black;
+
+            &.mobile {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .second {
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,31 @@
+#contact-us-card-container {
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: 170px;
+
+    padding-top: 15px;
+    padding-left: 15px;
+
+    border: 1px solid #d8e0e3;
+
+    span.title {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    span.subtitle {
+        margin-bottom: -40px;
+        margin-top: 10px;
+        font-size: 15px;
+        color: #898d8f;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+
+    }
+}

@@ -1,0 +1,40 @@
+#about-us-container {
+    display: flex;
+    flex-direction: row;
+    background-image: url("/images/about-us-background.jpg");
+
+    .wrapper {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 60px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-right: 60px;
+        margin-bottom: 30px;
+
+        .title-container {
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+
+            .title {
+                font-size: 120px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: #0f0d0d;
+                transform: rotate(-90deg);
+                margin-right: -100px;
+            }
+        }
+
+        .description-container {
+            width: 70%;
+
+            .description {
+                font-size: 20px;
+            }
+        }
+    }
+}
