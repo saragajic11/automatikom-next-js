@@ -19,4 +19,14 @@
         height: 650px;
         width: 100%;
     }
+
+
+    @media only screen and (max-width: 991px) {
+        height: 400px;
+
+        .carousel-image {
+            height: 350px;
+            width: 100%;
+        }
+    }
 }

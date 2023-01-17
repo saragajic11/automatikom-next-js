@@ -73,8 +73,28 @@
             font-size: 1.125rem;
         }
     }
-}
 
+    @media only screen and (max-width: 991px) {
+        width: 70%;
+        max-width: 70%;
+        height: 320px;
+        perspective: 320px;
+
+        .card-inner {
+            .card-front {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .card-back {
+                width: 200px;
+                max-width: 100%;
+            }
+        }
+    }
+}
 
 #card-container:hover .card-inner {
     transform: rotateY(180deg) translateZ(-1px);

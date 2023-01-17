@@ -37,4 +37,30 @@
             }
         }
     }
+
+    @media only screen and (max-width: 991px) {
+        flex-direction: column;
+
+        .wrapper {
+            flex-direction: column;
+            margin: 0px;
+            padding: 0px;
+            margin-left: 7.5%;
+            margin-right: 7.5%;
+
+            .title-container {
+                width: 100%;
+                justify-content: start;
+                .title {
+                    transform: none;
+                    font-size: 40px;
+                    margin-right: 0px;
+                }
+            }
+
+            .description-container {
+                width: 100%;
+            }
+        }
+    }
 }
