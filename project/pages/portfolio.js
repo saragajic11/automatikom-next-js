@@ -30,8 +30,8 @@ const Portfolio = () => {
         router.push("/");
         setTimeout(() => {
             let element = document.getElementById("contact-us-container");
-            element.scrollIntoView({behavior: "smooth"})
-          }, 200);
+            element?.scrollIntoView({behavior: "smooth"})
+          }, 500);
     }
 
     return <div id="portfolio-container">

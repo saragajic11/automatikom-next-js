@@ -1,0 +1,76 @@
+#footer-container {
+    height: 500px;
+    background-color: #0a1d94;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    .top {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+
+        .logo-container {
+            display: flex;
+            justify-content: space-evenly;
+            img {
+                height: 200px;
+                width: 300px;
+            }
+        }
+
+        .information-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .contact-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .sertificates-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        span {
+            color: white;
+            margin-bottom: 10px;
+            &.data {
+                font-size: 16px;
+            }
+
+            &.title {
+                font-size: 22px;
+            }
+        }
+    }
+
+    .bottom {
+        border-top: 0.003px solid white;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            color: white;
+        }
+    }
+
+    @media only screen and (max-width: 991px) {
+        height: auto;
+        text-align: center;
+
+        .top {
+            height: auto;
+
+            .information-container {
+                flex-direction: column;
+            }
+        }
+    }
+}

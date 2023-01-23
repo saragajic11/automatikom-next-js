@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: row;
     background-image: url("/images/about-us-background.jpg");
+    padding-left: 50px;
+    padding-right: 50px;
 
     .wrapper {
         display: flex;
@@ -40,11 +42,12 @@
 
     @media only screen and (max-width: 991px) {
         flex-direction: column;
+        padding: 0px;
 
         .wrapper {
             flex-direction: column;
             margin: 0px;
-            padding: 0px;
+            padding: 0px !important;
             margin-left: 7.5%;
             margin-right: 7.5%;
 

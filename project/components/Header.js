@@ -6,7 +6,7 @@ const Header = () => {
 
     const scrollElementIntoView = (id) => {
         let element = document.getElementById(id);
-        element.scrollIntoView({behavior: "smooth"})
+        element?.scrollIntoView({behavior: "smooth"})
     }
 
 
@@ -15,7 +15,7 @@ const Header = () => {
         router.push("/");
         setTimeout(() => {
             scrollElementIntoView("about-us-container");
-          }, 200);
+          }, 500);
 
     }
 
@@ -24,7 +24,7 @@ const Header = () => {
         router.push("/");
         setTimeout(() => {
             scrollElementIntoView("team");
-          }, 200);
+          }, 500);
     }
 
     const handleContactUsClick = (e) => {
@@ -32,7 +32,7 @@ const Header = () => {
         router.push("/");
         setTimeout(() => {
             scrollElementIntoView("contact-us-container");
-          }, 200);
+          }, 500);
     }
 
     const handlePortfolioClick = (e) => {
