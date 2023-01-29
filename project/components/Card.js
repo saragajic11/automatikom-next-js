@@ -1,6 +1,17 @@
+import { useRouter } from "next/router";
 import { useState } from "react";
 
-const Card = ({ name, position, image, description }) => {
+const Card = ({ id, name, position, image, description }) => {
+
+
+    const router = useRouter();
+
+    const onClickPersonalReferences = () => {
+        router.push({
+            pathname: '/references/' + id,
+            query: ''
+        })
+    }
 
     return <div id="card-container">
         <div className="card-inner">
@@ -17,6 +28,7 @@ const Card = ({ name, position, image, description }) => {
         <div className="card-name">
             <span className="name">{name}</span>
             <span className="position">{position}</span>
+            <span className="link" onClick={onClickPersonalReferences}>Lične reference</span>
         </div>
     </div>
 }

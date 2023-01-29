@@ -1,0 +1,75 @@
+#personal-references-container {
+    height: auto;
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .title {
+        font-size: 48px !important;
+        color: black;
+        font-weight: bold;
+    }
+    
+    .name {
+        font-size: 40px !important;
+        color: black;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        width: 100%;
+
+        .img-container {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            justify-content: left;
+            width: 30%;
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        .references-data-container {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: center;
+            width: 60%;
+            // margin-left: 50px;
+
+            #reference-container {
+                margin-bottom: 10px;
+                span.investor {
+                    font-size: 20px;
+                }
+
+                #project-by-investor-container {
+
+                    p {
+                        white-space: initial;
+                        width: 90%;
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                        font-size: 18px;
+                    }
+                    .project {
+
+                    }
+
+                    .function {
+                    }
+                }
+            }
+        }
+    }
+}
