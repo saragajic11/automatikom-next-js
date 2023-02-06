@@ -1,21 +1,20 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { componentDidMount } from "react";
 import Reference from "../../components/Reference";
+import { listOfPersonalReferences } from "../../context/variables";
 
 const PersonalReferences = () => {
-
     const router = useRouter();
     const [personalReference, setPersonalReference] = useState([]);
 
     useEffect(() => {
         setUpPersonalReferences();
-    })
+    }, []);
 
     const setUpPersonalReferences = () => {
 
         const { id } = router.query;
-        let personalReferences = JSON.parse(localStorage.getItem("listOfPersonalReferences"));
+        let personalReferences = listOfPersonalReferences;
         if (personalReference.length == 0) {
             if (id == 1) {
                 setPersonalReference(personalReferences[0]);

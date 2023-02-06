@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { submitContactUsForm } from "../services/ContactService";
 import ContactUsCard from "./ContactUsCard";
 import ContactUsData from "./ContactUsData";
 import ContactUsForm from "./ContactUsForm";
@@ -9,8 +10,19 @@ const ContactUs = () => {
     const form = useForm();
     const { handleSubmit, formState: { errors }, setError } = form;
 
-    const onSubmitContactUsForm = () => {
-        console.log("Submitovano")
+    const onSubmitContactUsForm = (data) => {
+        let submitContactUsFormDto = {
+            "subject": data.subject,
+            "email": data.email,
+            "message": data.message
+        }
+        console.log("data: " );
+        submitContactUsForm(submitContactUsFormDto).then(response => {
+            if (!response || !response.ok) {
+                return;
+            }
+            //PRIKAZI PORUKU DA JE MEJL POSLAT
+        })
     }
 
 

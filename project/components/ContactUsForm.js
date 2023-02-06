@@ -12,11 +12,11 @@ const ContactUsForm = ({
     return <FormProvider {...form} >
         <form id="contact-us-form" className="contact-us-form-container" onSubmit={onSubmit}>
             <TextFieldControl
-                name="name"
+                name="subject"
                 defaultValue=""
                 fullWidth
                 margin="normal"
-                placeholder="Your name" />
+                placeholder="Subject" />
 
             <TextFieldControl
                 name="email"

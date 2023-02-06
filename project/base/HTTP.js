@@ -1,14 +1,13 @@
-import {clearUserData} from './OAuth';
 import axios from 'axios';
-import HttpMethod from "../Constants/Base/HttpMethod";
+import HttpMethod from "../constants/HttpMethod";
 
-const Axios = (function () {
+export const Axios = (function () {
 
     let instance;
 
     function createInstance() {
         return axios.create({
-            baseURL: process.env.REACT_APP_BASE_URL
+            baseURL: process.env.NEXT_PUBLIC_APP_BASE_URL
         });
     }
 
@@ -19,14 +18,7 @@ const Axios = (function () {
                 instance = createInstance();
             }
 
-            const token = getToken();
-
-            if(token) {
-                instance.defaults.headers.common['Authorization']  = getToken();
-            }
-
             instance.all = axios.all;
-
             return instance;
         }
     }
@@ -40,22 +32,20 @@ Axios.getInstance().interceptors.response.use(response => {
 }, async error => {
 
     const { response: { status } } = error;
-    if(status === 404) {
-        window.location = '/404'
-    }
-    else if(status === 500) {
-        if(!isLocalhost()) {
-            window.location = '/500'
-        }
-    }
-    else if(status === 403) {
-        clearUserData();
-        window.location = '/403'
-    }
-    else if(status === 401) {
-        clearUserData();
-        window.location = '/401'
-    }
+    // if(status === 404) {
+    //     window.location = '/404'
+    // }
+    // else if(status === 500) {
+    //     if(!isLocalhost()) {
+    //         window.location = '/500'
+    //     }
+    // }
+    // else if(status === 403) {
+    //     window.location = '/403'
+    // }
+    // else if(status === 401) {
+    //     window.location = '/401'
+    // }
 
     return error;
 });
@@ -63,9 +53,11 @@ Axios.getInstance().interceptors.response.use(response => {
 export async function request(url, data = [], method = HttpMethod.GET, options = {}) {
 
     try {
+        console.log("Ovde sam");
         return await connect(url, data, method, options);
     }
     catch {
+        console.log("Ipak sam ovde");
         if(!isLocalhost()) {
             window.location = '/500'
         }
@@ -75,6 +67,7 @@ export async function request(url, data = [], method = HttpMethod.GET, options =
 
 export async function connect(url, data, method, options) {
 
+    console.log("URL: ", url);
     switch (method) {
         case HttpMethod.GET : {
             return await Axios.getInstance().get(url + makeParametersList(data), options);
@@ -98,22 +91,6 @@ export function makeParametersList(parameters){
     return parametersList === '?' ? '' : parametersList;
 }
 
-export function getToken() {
-
-    const token = localStorage.getItem(process.env.REACT_APP_TOKEN_KEY);
-
-    if(!token) {
-        return null;
-    }
-
-    return 'Bearer ' + localStorage.getItem(process.env.REACT_APP_TOKEN_KEY);
-}
-
-export function getUserFromLocalStorage() {
-
-    let user = localStorage.getItem('user');
-    return user ? JSON.parse(user) : null;
-}
 function isLocalhost() {
     return window.location.href.includes('localhost')
 }
