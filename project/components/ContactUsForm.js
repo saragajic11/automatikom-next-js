@@ -16,14 +16,20 @@ const ContactUsForm = ({
                 defaultValue=""
                 fullWidth
                 margin="normal"
-                placeholder="Subject" />
+                placeholder="Subject"
+                rules={formRules['subject']}
+                error={Boolean(errors.subject)}
+                helperText={errors.subject && "Obavezno polje"} />
 
             <TextFieldControl
                 name="email"
                 defaultValue=""
                 fullWidth
                 margin="normal"
-                placeholder="Your email address" />
+                placeholder="Your email address"
+                rules={formRules['email']}
+                error={Boolean(errors.email)}
+                helperText={errors.email && "Email nije validan"} />
 
             <TextFieldControl
                 name="message"
@@ -33,7 +39,11 @@ const ContactUsForm = ({
                 placeholder="Your message"
                 multiline={true}
                 minRows={5}
-                maxLength={5000} />
+                maxLength={5000}
+                rules={formRules['message']}
+                error={Boolean(errors.message)}
+                helperText={errors.message && "Obavezno polje"}
+                 />
 
             <Button className="submit-btn" type={'submit'}>
                 Send message

@@ -18,11 +18,10 @@
             width: 30%;
             display: flex;
             flex-direction: row;
-            align-items: center;
             justify-content: end;
 
             .title {
-                font-size: 120px;
+                font-size: 90px;
                 margin-top: 20px;
                 margin-bottom: 20px;
                 color: #0f0d0d;
@@ -32,10 +31,10 @@
         }
 
         .description-container {
-            width: 70%;
+            width: 50%;
 
             .description {
-                font-size: 20px;
+                font-size: 25px;
             }
         }
     }
@@ -63,6 +62,9 @@
 
             .description-container {
                 width: 100%;
+                .description {
+                    font-size: 16px !important;
+                }
             }
         }
     }

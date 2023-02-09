@@ -9,20 +9,26 @@ const PersonalReferences = () => {
 
     useEffect(() => {
         setUpPersonalReferences();
-    }, []);
+    }, [personalReference]);
 
     const setUpPersonalReferences = () => {
 
         const { id } = router.query;
         let personalReferences = listOfPersonalReferences;
-        if (personalReference.length == 0) {
-            if (id == 1) {
-                setPersonalReference(personalReferences[0]);
-            } else if (id == 2) {
-                setPersonalReference(personalReferences[1]);
-            } else if (id == 3) {
-                setPersonalReference(personalReferences[2]);
-            }
+        if (id == 1) {
+            setPersonalReference(personalReferences[0]);
+        } else if (id == 2) {
+            setPersonalReference(personalReferences[1]);
+        } else if (id == 3) {
+            setPersonalReference(personalReferences[2]);
+        } else if (id == 4) {
+            setPersonalReference(personalReferences[3]);
+        } else if (id == 5) {
+            setPersonalReference(personalReferences[4]);
+        } else if (id == 6) {
+            setPersonalReference(personalReferences[5]);
+        } else if (id == 7) {
+            setPersonalReference(personalReferences[6]);
         }
     }
 

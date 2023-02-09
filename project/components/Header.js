@@ -15,7 +15,7 @@ const Header = () => {
         router.push("/");
         setTimeout(() => {
             scrollElementIntoView("about-us-container");
-          }, 500);
+          }, 4000);
 
     }
 
@@ -24,7 +24,7 @@ const Header = () => {
         router.push("/");
         setTimeout(() => {
             scrollElementIntoView("team");
-          }, 500);
+          }, 4000);
     }
 
     const handleContactUsClick = (e) => {
@@ -32,7 +32,7 @@ const Header = () => {
         router.push("/");
         setTimeout(() => {
             scrollElementIntoView("contact-us-container");
-          }, 500);
+          }, 4000);
     }
 
     const handlePortfolioClick = (e) => {
@@ -47,9 +47,9 @@ const Header = () => {
         <div className={"header-nav-container"}>
             <div className={"empty"}></div>
             <div className={"nav-items"}>
-                <span className={"about-us-nav-item"} onClick={handleAboutUsClick}>About us</span>
-                <span className={"team-nav-item"} onClick={handleTeamClick}>Team</span>
-                <span className={"contact-nav-item"} onClick={handleContactUsClick}>Contact us</span>
+                <span className={"about-us-nav-item"} onClick={handleAboutUsClick}>O nama</span>
+                <span className={"team-nav-item"} onClick={handleTeamClick}>Tim</span>
+                <span className={"contact-nav-item"} onClick={handleContactUsClick}>Kontakt</span>
                 <span className={"portfolio-item"} onClick={handlePortfolioClick}>Portfolio</span>
             </div>
         </div>

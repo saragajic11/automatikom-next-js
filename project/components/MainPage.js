@@ -3,13 +3,13 @@ import AboutUs from '../Components/AboutUs';
 import Team from '../Components/Team';
 import ContactUs from '../Components/ContactUs';
 
-const MainPage = () => {
+const MainPage = ({setLoading}) => {
 
     return <div id="main-container">
         <CarouselContainer />
         <AboutUs />
         <Team />
-        <ContactUs />
+        <ContactUs setLoading={setLoading}/>
     </div>
 }
 

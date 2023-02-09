@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { listOfPersonalReferences } from "../context/variables";
 import Card from "./Card";
 
 const Team = () => {
@@ -10,23 +11,26 @@ const Team = () => {
     })
 
     const setUpPersonalReferences = () => {
-        let listOfPersonalReferences = JSON.parse(localStorage.getItem("listOfPersonalReferences"));
+        let listOfReferences = listOfPersonalReferences;
         if (personalReferences.length == 0) {
-            setPersonalReferences(listOfPersonalReferences)
-            console.log("PR: ", listOfPersonalReferences);
+            setPersonalReferences(listOfReferences)
+            console.log("PR: ", listOfReferences);
         }
     }
 
     return <div id="team">
 
-        <span className="title">Team</span>
+        <span className="title">Naš tim</span>
 
         <div className="team-container">
             <Card id={personalReferences[0]?.id} name={personalReferences[0]?.name} position={personalReferences[0]?.position} image={personalReferences[0]?.image} description={personalReferences[0]?.description} />
             <Card id={personalReferences[1]?.id} name={personalReferences[1]?.name} position={personalReferences[1]?.position} image={personalReferences[1]?.image} description={personalReferences[1]?.description} />
             <Card id={personalReferences[2]?.id} name={personalReferences[2]?.name} position={personalReferences[2]?.position} image={personalReferences[2]?.image} description={personalReferences[2]?.description} />
-            <Card name={"Jovan Jovanovic"} position={"Position 4"} image={"./images/person.png"} description={"Description number 4"} />
-            <Card name={"Lazar Lazarevic"} position={"Position 5"} image={"./images/person.png"} description={"Description number 5. This is a longer description in order to check how it works. Looks good so far."} />
+            <Card id={personalReferences[3]?.id} name={personalReferences[3]?.name} position={personalReferences[3]?.position} image={personalReferences[3]?.image} description={personalReferences[3]?.description} />
+            <Card id={personalReferences[4]?.id} name={personalReferences[4]?.name} position={personalReferences[4]?.position} image={personalReferences[4]?.image} description={personalReferences[4]?.description}  />
+            <Card id={personalReferences[5]?.id} name={personalReferences[5]?.name} position={personalReferences[5]?.position} image={personalReferences[5]?.image} description={personalReferences[5]?.description}  />
+            <Card id={personalReferences[6]?.id} name={personalReferences[6]?.name} position={personalReferences[6]?.position} image={personalReferences[6]?.image} description={personalReferences[6]?.description}  />
+
         </div>
     </div>
 }

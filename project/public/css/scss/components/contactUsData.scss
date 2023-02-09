@@ -17,8 +17,21 @@
             font-size: 16px !important;
             color: black;
 
+            &.contact {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+            }
+
             &.mobile {
                 margin-top: 40px;
+            }
+
+
+            img {
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
             }
         }
     }

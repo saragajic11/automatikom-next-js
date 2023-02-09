@@ -8,18 +8,18 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  const {setLoading} = useContext(LoaderContext);
-    
+  const { setLoading } = useContext(LoaderContext);
+
 
   useEffect(() => {
-      setLoading(true);
-      setTimeout(() => {
-          setLoading(false)
-      }, 3000);
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000);
   }, [])
 
 
   return (
-    <MainPage />
+    <MainPage setLoading={setLoading} />
   )
 }

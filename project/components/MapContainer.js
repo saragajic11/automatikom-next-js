@@ -1,5 +1,5 @@
 import React from "react";
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, MarkerF } from '@react-google-maps/api';
 
 const MapContainer = () => {
 
@@ -27,7 +27,7 @@ const MapContainer = () => {
                 mapContainerStyle={containerStyle}
                 center={location}
                 zoom={16}>
-                <Marker position={location} />
+                <MarkerF position={location} />
                 { /* Child components, such as markers, info windows, etc. */}
                 <></>
             </GoogleMap>

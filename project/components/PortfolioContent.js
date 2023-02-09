@@ -5,7 +5,7 @@ const PortfolioContent = ({ item, index }) => {
             <div className="description">{item.description}</div>
         </div>
         <div className="image-container">
-            <img src={item.imgSrc} />
+            <img src={item.imgSrc} className={item.imgSrc.includes("prj-8") || item.imgSrc.includes("prj-7") || item.imgSrc.includes("prj-6") ? "shorter" : ""} />
         </div>
     </div>
 }

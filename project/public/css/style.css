@@ -188,11 +188,10 @@ p {
   width: 30%;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: end;
 }
 #about-us-container .wrapper .title-container .title {
-  font-size: 120px;
+  font-size: 90px;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #0f0d0d;
@@ -200,10 +199,10 @@ p {
   margin-right: -100px;
 }
 #about-us-container .wrapper .description-container {
-  width: 70%;
+  width: 50%;
 }
 #about-us-container .wrapper .description-container .description {
-  font-size: 20px;
+  font-size: 25px;
 }
 @media only screen and (max-width: 991px) {
   #about-us-container {
@@ -228,6 +227,9 @@ p {
   }
   #about-us-container .wrapper .description-container {
     width: 100%;
+  }
+  #about-us-container .wrapper .description-container .description {
+    font-size: 16px !important;
   }
 }
 
@@ -496,6 +498,12 @@ p {
   margin-top: 10px !important;
 }
 
+.recaptcha-container div {
+  width: 200px !important;
+  height: 100px !important;
+  margin: 0px !important;
+}
+
 #contact-us-data-container {
   display: flex;
   flex-direction: row;
@@ -514,8 +522,18 @@ p {
   font-size: 16px !important;
   color: black;
 }
+#contact-us-data-container .column span.contact {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
 #contact-us-data-container .column span.mobile {
   margin-top: 40px;
+}
+#contact-us-data-container .column span img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
 }
 #contact-us-data-container .second {
   margin-left: 50px;
@@ -604,6 +622,7 @@ p {
 }
 
 #portfolio-content-container {
+  text-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -630,10 +649,18 @@ p {
 #portfolio-content-container .image-container {
   width: 30%;
   height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 #portfolio-content-container .image-container img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
+}
+#portfolio-content-container .image-container img.shorter {
+  height: 30% !important;
 }
 
 #footer-container {
@@ -760,6 +787,43 @@ p {
   margin-bottom: 8px;
   font-size: 18px;
 }
+@media only screen and (max-width: 991px) {
+  #personal-references-container {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  #personal-references-container .title {
+    font-size: 35px !important;
+  }
+  #personal-references-container .name {
+    font-size: 30px !important;
+  }
+  #personal-references-container .content {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  #personal-references-container .content img {
+    width: 150px;
+    height: 150px;
+  }
+  #personal-references-container .content .references-data-container {
+    width: 100%;
+    text-align: center;
+  }
+  #personal-references-container .content .references-data-container #reference-container {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  #personal-references-container .content .references-data-container #reference-container span.investor {
+    font-size: 18px;
+  }
+  #personal-references-container .content .references-data-container #reference-container span.project, #personal-references-container .content .references-data-container #reference-container span.function {
+    font-size: 16px;
+  }
+}
+
 .loader {
   position: fixed !important;
   width: 100%;

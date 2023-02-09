@@ -1,5 +1,7 @@
 #portfolio-content-container {
 
+    text-align: center;
+
     &.row-reverse {
         flex-direction: row-reverse;
     }
@@ -30,9 +32,18 @@
     .image-container {
         width: 30%;
         height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         img {
-            width: 100%;
-            height: 100%;
+            width: 80%;
+            height: 80%;
+
+            &.shorter {
+                height: 30% !important;
+            }
         }
     }
 }
