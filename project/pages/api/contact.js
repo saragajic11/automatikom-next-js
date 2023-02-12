@@ -1,7 +1,6 @@
 const Contact = (req, res) => {
-    console.log("Caos?");
-
     const nodemailer = require("nodemailer");
+    const { captchaCode } = req.body;
     const transporter = nodemailer.createTransport({
         port: 587,
         host: "cpanel.autom.mycpanel.rs",
@@ -13,7 +12,6 @@ const Contact = (req, res) => {
         tls: { rejectUnauthorized: false }
     });
 
-    console.log("Kreirala sam transporter");
     const mailData = {
         from: 'office@automatikom.rs',
         to: 'sara.gajic@lilly021.com',
@@ -21,18 +19,22 @@ const Contact = (req, res) => {
         text: "Kontakt mail: " + req.body.email + "\n" + "Poruka: " + req.body.message,
     }
 
-    console.log("Kreirala sam mail data: ", mailData);
-
-    transporter.sendMail(mailData, function (err, info) {
-        if (err) {
-            console.log(err);
-            res.send("Error");
-        }
-        else {
-            console.log(info);
-            res.send("Success");
-        }
-    })
+    if (!captchaCode) {
+        return res.status(422).json({
+            message: "Unproccesable request, please provide the required fields",
+        })
+    } else {
+        transporter.sendMail(mailData, function (err, info) {
+            if (err) {
+                console.log(err);
+                res.send("Error");
+            }
+            else {
+                console.log(info);
+                res.send("Success");
+            }
+        })
+    }
 }
 
 export default Contact;

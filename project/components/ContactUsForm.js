@@ -1,12 +1,16 @@
 import { Button } from "@mui/material";
 import { FormProvider } from "react-hook-form";
 import TextFieldControl from "./Controls/TextFieldControl";
+import ReCAPTCHA from "react-google-recaptcha";
+import { createRef } from "react";
 
 const ContactUsForm = ({
     onSubmit,
     form,
     errors,
-    formRules
+    formRules,
+    onReCAPTCHAChange,
+    recaptchaRef
 }) => {
 
     return <FormProvider {...form} >
@@ -43,11 +47,22 @@ const ContactUsForm = ({
                 rules={formRules['message']}
                 error={Boolean(errors.message)}
                 helperText={errors.message && "Obavezno polje"}
-                 />
+            />
+
+            <div className="recaptcha-container">
+                <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                    size="normal"
+                    onChange={onReCAPTCHAChange}
+                    badge="inline"
+                />
+            </div>
 
             <Button className="submit-btn" type={'submit'}>
                 Send message
             </Button>
+
         </form>
     </FormProvider>
 }
