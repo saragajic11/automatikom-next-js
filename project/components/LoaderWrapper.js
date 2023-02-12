@@ -12,17 +12,13 @@ const LoaderWrapper = ({ children }) => {
     const value = { loading: loadingManual, setLoading: setLoadingManual };
 
     useEffect(() => {
-        console.log("Loading M: ", loadingManual);
     }, [loadingManual]);
 
     useEffect(() => {
-        console.log("Loading: ", loading);
     }, [loading]);
 
     useEffect(() => {
-        console.log("Eve me", loading);
         if (countRef.current <= 0 || !loading) {
-            console.log("eve me 2");
             countRef.current = 0;
             setLoading(false);
         }

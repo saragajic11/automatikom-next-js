@@ -14,7 +14,6 @@ const Team = () => {
         let listOfReferences = listOfPersonalReferences;
         if (personalReferences.length == 0) {
             setPersonalReferences(listOfReferences)
-            console.log("PR: ", listOfReferences);
         }
     }
 

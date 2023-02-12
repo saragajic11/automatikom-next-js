@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Alert, Snackbar } from "@mui/material";
-import SnackbarContext from "../Context/SnackbarContext";
 import Header from '../Components/Header';
 import CarouselContainer from '../Components/CarouselContainer';
 import AboutUs from '../Components/AboutUs';

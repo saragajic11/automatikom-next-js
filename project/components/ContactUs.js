@@ -41,15 +41,11 @@ const ContactUs = ({ setLoading, showMessage }) => {
                 showMessage("Uspešno poslat mejl", "success");
                 recaptchaRef.current.reset();
             } else if (res.status === 422) {
-                console.log("MHM");
                 showMessage("Molimo potvrdite da niste robot", "error");
-
-                //prikazi da je doslo do greske sa recaptchom - robotom
             }
             setLoading(false);
         }).catch(error => {
-            console.log("AHA");
-            // resolve();
+            resolve();
             setLoading(false);
             showMessage("Došlo je do greške. Molimo proverite podatke i pokušajte ponovo.", "error");
 

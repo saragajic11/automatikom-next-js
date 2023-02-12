@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 const SnackbarContext = createContext({
-    showMessage: () => { console.log("Ojala") }
+    showMessage: () => { }
 });
 
 export default SnackbarContext;

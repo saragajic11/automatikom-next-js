@@ -26,11 +26,9 @@ const Contact = (req, res) => {
     } else {
         transporter.sendMail(mailData, function (err, info) {
             if (err) {
-                console.log(err);
                 res.send("Error");
             }
             else {
-                console.log(info);
                 res.send("Success");
             }
         })

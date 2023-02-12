@@ -12,8 +12,6 @@ export default function Home() {
   const { setLoading } = useContext(LoaderContext);
   const { showMessage } = useContext(SnackbarContext);
 
-  console.log("useContext", useContext(SnackbarContext));
-
 
   useEffect(() => {
     setLoading(true);

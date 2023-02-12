@@ -53,11 +53,9 @@ Axios.getInstance().interceptors.response.use(response => {
 export async function request(url, data = [], method = HttpMethod.GET, options = {}) {
 
     try {
-        console.log("Ovde sam");
         return await connect(url, data, method, options);
     }
     catch {
-        console.log("Ipak sam ovde");
         if(!isLocalhost()) {
             window.location = '/500'
         }
@@ -66,8 +64,6 @@ export async function request(url, data = [], method = HttpMethod.GET, options =
 }
 
 export async function connect(url, data, method, options) {
-
-    console.log("URL: ", url);
     switch (method) {
         case HttpMethod.GET : {
             return await Axios.getInstance().get(url + makeParametersList(data), options);
