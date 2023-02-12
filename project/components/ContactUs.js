@@ -44,10 +44,12 @@ const ContactUs = ({ setLoading, showMessage }) => {
                 showMessage("Molimo potvrdite da niste robot", "error");
             }
             setLoading(false);
+            recaptchaRef.current.reset();
         }).catch(error => {
             resolve();
             setLoading(false);
             showMessage("Došlo je do greške. Molimo proverite podatke i pokušajte ponovo.", "error");
+            recaptchaRef.current.reset();
 
         });
     }
