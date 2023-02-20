@@ -21,24 +21,36 @@ const Header = () => {
                 break;
             }
             case "about-us": {
-                router.push("/");
-                setTimeout(() => {
+                if (router.pathname === '/') {
                     scrollElementIntoView("about-us-container");
-                }, 4000);
+                } else {
+                    router.push("/");
+                    setTimeout(() => {
+                        scrollElementIntoView("about-us-container");
+                    }, 4000);
+                }
                 break;
             }
             case "team": {
-                router.push("/");
-                setTimeout(() => {
+                if (router.pathname === '/') {
                     scrollElementIntoView("team");
-                }, 4000)
+                } else {
+                    router.push("/");
+                    setTimeout(() => {
+                        scrollElementIntoView("team");
+                    }, 4000)
+                }
                 break;
             }
             case "contact": {
-                router.push("/");
-                setTimeout(() => {
+                if (router.pathname === '/') {
                     scrollElementIntoView("contact-us-container");
-                }, 4000);
+                } else {
+                    router.push("/");
+                    setTimeout(() => {
+                        scrollElementIntoView("contact-us-container");
+                    }, 4000);
+                }
                 break;
             }
             case "portfolio": {
