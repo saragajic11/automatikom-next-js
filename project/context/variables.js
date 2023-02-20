@@ -229,7 +229,11 @@ export const listOfPersonalReferences = [
       },
       {
         id: 2, investor: "Investitor: Sunoko d.o.o. Pećinci", projects: [
-          { project: "Projekat: Upgrade i virtuelizacija PCS7 upravljačkog sistema", function: "Funkcija: Vodeći inženjer softvera" }
+          { project: "Projekat: Upgrade i virtuelizacija PCS7 upravljačkog sistema", function: "Funkcija: Vodeći inženjer softvera" },
+          { project: "Projekat: MVR evaporatori / PCS7", function: "Funkcija: Vodeći inženjer softvera" },
+          { project: "Projekat: DCS sistem, Proces dekalcifikacije / PCS7", function: "Funkcija: Vodeći inženjer softvera" },
+          { project: "Projekat: PCS7 sistem (kontinualno C kuvanje)", function: "Funkcija: Vodeći inženjer softvera" },
+
         ]
       },
       {
@@ -249,31 +253,89 @@ export const listOfPersonalReferences = [
       },
       {
         id: 6, investor: "Investitor: PSA GmbH", projects: [
-          { project: "Projekat: Softver za mlin cementa za postrojenje u Engleskoj / PCS7 V9 CEMAT Minerals", function: "Funkcija: Softver inženjer" }
-        ]
-      },
-      {
-        id: 7, investor: "Investitor: PSA GmbH", projects: [
           { project: "Projekat: Softver za mlin cementa za postrojenje u Engleskoj / PCS7 V9 CEMAT Minerals", function: "Funkcija: Softver inženjer" },
           { project: "Projekat: Softver za mlin cementa za postrojenje u Gruziji / PCS7 V9 CEMAT Minerals", function: "Funkcija: Softver inženjer" }
         ]
       },
       {
-        id: 8, investor: "Investitor: HBIS GROUP Srbija", projects: [
+        id: 7, investor: "Investitor: HBIS GROUP Srbija", projects: [
           { project: "Projekat: Oduzimač rude br. 2", function: "Funkcija: Vodeći inženjer za softver - projektovanje, izrada, ispitivanje i puštanje u rad" },
         ]
       },
       {
-        id: 9, investor: "Investitor: Lafarge/Biospringer Senta", projects: [
+        id: 8, investor: "Investitor: Lafarge/Biospringer Senta", projects: [
           { project: "Projekat: Proširenje postrojenja (upravljački sistem sudova za ćelijski zid)", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
           { project: "Projekat: Proširenje postrojenja (upravljački sistemi sudova finalnih proizvoda, sudova ćelijskog zida, postrojenja CIP-a, integracija UHT-a, izrada upravljačkog sistema filtera, CIP, izmene u postojećem sistemu)", function: "Funkcija: Vodeći inženjer za softver – projektovanje, izrada, ispitivanje i puštanje u rad" }
         ]
       },
       {
-        id: 10, investor: "Investitor: Elektroprivreda Srbije - ogranak „TE-KO Kostolac“", projects: [
-          { project: "Projekat: FLSmidth, FLSmidth odlagač PA200/2000", function: "Funkcija: Vodeći inženjer za softver - projektovanje, izrada, ispitivanje i puštanje u rad" }
+        id: 9, investor: "Investitor: Elektroprivreda Srbije - ogranak „TE-KO Kostolac“", projects: [
+          { project: "Projekat: FLSmidth, FLSmidth odlagač PA200/2000", function: "Funkcija: Vodeći inženjer za softver - projektovanje, izrada, ispitivanje i puštanje u rad" },
+          { project: "Projekat: FLSmidth C1885 Kolubara 2 odlagač 12000", function: "Funkcija: Vodeći inženjer za softver – izrada, ispitivanje i puštanje u rad (kao podizvođač Elnos BL)" },
+          { project: "Projekat: Rudarski basen Kolubara, Sandvik odlagač 8800 / PLC", function: "Funkcija: Vodeći inženjer za softver" }
         ]
-      }
+      },
+      {
+        id: 10, investor: "Investitor: RTB Bor - Rudnici Majdanpek", projects: [
+          { project: "Projekat: Projektovanje, programiranje, izrada upravljačkih ormana i puštanje u rad transportnog sistema 1 u Rudniku bakra Majdanpek / PLC, HMI", function: "Funkcija: Aplikativni inženjer" },
+          { project: "Projekat: Programiranje i puštanje u rad transportnog sistema „Severni revir“ RTB Bor – proširenje - Rudnik Majdanpek / PLC, HMI", function: "Funkcija: Aplikativni inženjer" },
+          { project: "Projekat: SCADA i upravljački sistem za liniju topljenja bakra", function: "Funkcija: Vodeći inženjer softvera" },
+          { project: "Projekat: Programiranje i puštanje u rad transportnog sistema „Severni revir“ RTB Bor - Rudnik Majdanpek / PLC, HMI", function: "Funkcija: Vodeći inženjer softvera" },
+          { project: "Projekat: Drobilišno postrojenje, sistem transportnih traka, odlagač Veliki Krivelj Bor", function: "Funkcija: SCADA, HMI, PLC aplikativni inženjer" }
+
+        ]
+      },
+      {
+        id: 11, investor: "Investitor: Fiat Automobiles Srbija", projects: [
+          { project: "Projekat: DCS energetskog bloka / PCS7", function: "Funkcija: Vodeći inženjer softvera" },
+        ]
+      },
+      {
+        id: 12, investor: "Investitor: Alltech Fermin, Senta", projects: [
+          { project: "Projekat: Upravljački sistem ekstrakcije kvasca / PCS7", function: "Funkcija: Aplikativni inženjer" }
+        ]
+      },
+      {
+        id: 13, investor: "Investitor: JKP Naissus, Nis, Srbija", projects: [
+          { project: "Projekat: PS Mramor 1 upravljački sistem / PLC", function: "Funkcija: Aplikativni inženjer" },
+          { project: "Projekat: SCADA sistem pumpe stanice Krupac", function: "Funkcija: PLC, SCADA aplikativni inženjer" }
+        ]
+      },
+      {
+        id: 14, investor: "Investitor: US Steel Srbija", projects: [
+          { project: "Projekat: Rekonstrukcija upravljačkog sistema linije 4 aglomeracije / PLC", function: "Funkcija: PLC aplikativni inženjer" }
+        ]
+      },
+      {
+        id: 15, investor: "Investitor: Pharmanova, Beograd", projects: [
+          { project: "Projekat: Nadzorno-upravljački sistem reaktora za proizvodnju sirupa / PLC, HMI", function: "Funkcija: Aplikativni inženjer" }
+        ]
+      },
+      {
+        id: 16, investor: "Investitor: Ebara Densan Ltd. / Beogradski vodovod i kanalizacija (Srbija)", projects: [
+          { project: "Projekat: Projekat unapređenja vodovodnog sistema grada Beograda Faza 1", function: "Funkcija: PLC aplikativni inženjer" }
+        ]
+      },
+      {
+        id: 17, investor: "Investitor: TRAYAL, Kruševac", projects: [
+          { project: "Projekat: Nadzorno-upravljački sistem miksera K7 / SCADA i sistem baza podataka", function: "Funkcija: Aplikativni inženjer" }
+        ]
+      },
+      {
+        id: 18, investor: "Investitor: Železara Smederevo", projects: [
+          { project: "Projekat: Nadzorno-upravljački sistem tehnološke linije konvertora br. 3", function: "Funkcija: SCADA aplikativni inženjer" }
+        ]
+      },
+      {
+        id: 19, investor: "Investitor: Galenika Fitofarmacija, Beograd", projects: [
+          { project: "Projekat: SCADA sistem herbicida EC i SC formulacije", function: "Funkcija: SCADA, HMI, PLC aplikativni inženjer" }
+        ]
+      },
+      {
+        id: 20, investor: "Investitor: MIK Sveti Nikole", projects: [
+          { project: "Projekat: Upravljačko nadzorni sistem vertikalnih autoklava – postrojenja za sterilizaciju konzervi", function: "Funkcija: SCADA, PLC aplikativni inženjer" }
+        ]
+      },
     ]
   },
   {
@@ -341,7 +403,7 @@ export const listOfPersonalReferences = [
         id: 12, investor: "Investitor: Thyssen Krupp Industrial Solutions GmbH, za “TE-KO” Kostolac", projects: [
           { project: "Projekat: Upravljački sistem bagera 6600 m3/h", function: "Funkcija: Rukovodilac projekta" }
         ]
-      },
+      }
     ]
   },
   {
