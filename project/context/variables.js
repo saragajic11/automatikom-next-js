@@ -1,6 +1,38 @@
 export const listOfPersonalReferences = [
   {
-    id: 1, name: "Ivan Lazić", position: "Position 1", image: "../images/person.png", description: "Description number 1", listOfProjects: [
+    id: 1, name: "Zoran Tašin", position: "Position 1", image: "../images/person.png", description: "Description number 1", listOfProjects: [
+      {
+        id: 1, investor: "Investitor: Biospringer Senta, Fabrika kvasca i ekstrakta kvasca (ex. Alltech Fermin)", projects: [
+          { project: "Projekat: DCS pogona ekstrakta kvasca, sa migracijom PCS7 sa v.7.1 na v.8.2", function: "Funkcija: Izvršilac" },
+          { project: "Projekat: SCADA sistem za nadzor fabrike sa web interfejsom", function: "Funkcija: Rukovodilac projekta" },
+          { project: "Projekat:  Sistem za praćenje proizvodnje i upis u bazu podataka fabrike", function: "Funkcija: Rukovodilac projekta" },
+
+        ]
+      },
+      {
+        id: 2, investor: "Investitor: ELEX COMMERCE", projects: [
+          { project: "Projekat: SOLTARIS - Solid Target Irradiation System - sistem za ozračivanje čvrstih meta", function: "Funkcija: Rukovodilac projekta" }
+        ]
+      },
+      {
+        id: 3, investor: "Investitor: Sunoko d.o.o. PC Vrbas", projects: [
+          { project: "Projekat: DCS pogona kuvanja repe, kaskadno i kontinualno kuvanje (sa migracijom PCS7 sa v.7.1 na v.9.1)", function: "Funkcija: Izvršilac" }
+        ]
+      },
+      {
+        id: 4, investor: "Investitor: Sunoko d.o.o. Beograd, PC Pećinci", projects: [
+          { project: "Projekat: DCS PCS7 upravljački sistem Fabrike za odšećeravanje melase", function: "Funkcija: Izvršilac" }
+        ]
+      },
+      {
+        id: 5, investor: "Investitor:  Siemens d.o.o. Beograd, za “Fiat automobili Srbija” Kragujevac", projects: [
+          { project: "Projekat: DCS PCS7 upravljački sistem vrelovodne kotlarnice, ukupna snaga 181MW", function: "Funkcija: Izvršilac" }
+        ]
+      },
+    ]
+  },
+  {
+    id: 2, name: "Ivan Lazić", position: "Position 2", image: "../images/person.png", description: "Description number 2", listOfProjects: [
       {
         id: 1, investor: "Investitor: LA FANTANA, Goč", projects: [
           { project: "Projekat: Upravljačko nadzorni sistem crpljenja vode i dopreme do nove fabrike", function: "Funkcija: Realizacija aplikativnog softvera, testiranje i puštanje u rad" }
@@ -118,7 +150,134 @@ export const listOfPersonalReferences = [
     ]
   },
   {
-    id: 2, name: "Darko Gajić", position: "Position 2", image: "../images/person.png", description: "Description number 2", listOfProjects: [
+    id: 3, name: "Vladimir Pajović", position: "Position 3", image: "../images/person.png", description: "Description number 3", listOfProjects: [
+      {
+        id: 1, investor: "Investitor: JKP “SUBOTIČKA TOPLANA“, Subotica", projects: [
+          { project: "Projekat: Upravljački sistem vrelovodnog kotla 35MW, hidrauličke skretnice i vrelovodnog grejanja mazuta", function: "Funkcija: Izrada idejnog projekta, projekta za izvođenje i projekta izvedenog objekta" }
+        ]
+      },
+      {
+        id: 2, investor: "Investitor: Biospringder RS DOO, Senta", projects: [
+          { project: "Projekat: Upravljački sistem anhidro sušnice i klima komore", function: "Funkcija: Izrada izvođačkog projekta" }
+        ]
+      },
+      {
+        id: 3, investor: "Investitor: MG Mivela DOO, Trstenik", projects: [
+          { project: "Projekat: Upravljački sistem Fabrike mineralne mode", function: "Funkcija: Izrada izvođačkog projekta, PLC i HMI aplikacije i puštanje u rad" }
+        ]
+      },
+      {
+        id: 4, investor: "Investitor: PPT Inženjering DOO, Beograd", projects: [
+          { project: "Projekat: Upravljački sistem zaštitne mreže za hvatanje brodova na HE Đerdap II", function: "Funkcija: Izrada izvođačkog projekta" }
+        ]
+      },
+      {
+        id: 5, investor: "Investitor: HIP Petrohemija", projects: [
+          { project: "Projekat: Upravljački sistem DC spojnice za regulaciju brzine na ekstruderu", function: "Funkcija: Izrada projekta, PLC i HMI aplikacije" }
+        ]
+      },
+      {
+        id: 6, investor: "Investitor: HE “Potpeć“", projects: [
+          { project: "Projekat: Upravljački sistem Portalnog krana 100t/15t", function: "Funkcija: Puštanje mašine u rad (izrada PLC i HMI softvera i parametrisanje frekventnih regulatora)" }
+        ]
+      },
+      {
+        id: 7, investor: "Investitor: HESTEEL Serbia, Smederevo", projects: [
+          { project: "Projekat: Upravljački sistem Oduzimača rude (reclaimer)", function: "Funkcija: Učesnik u izradi projekta i puštanju mašine u rad (parametrifanje frekventnih regulatora)" }
+        ]
+      },
+      {
+        id: 8, investor: "Investitor: FLSmidth", projects: [
+          { project: "Projekat: Upravljački sistem odlagača (Spreader) 12000m³/h i 8500m³/h", function: "Funkcija: Učesnik u izradi projekta i puštanju mašine u rad" }
+        ]
+      },
+      {
+        id: 9, investor: "Investitor: Thyssenkrup Industrial Solutions", projects: [
+          { project: "Projekat: Upravljački sistem Rotornog bagera 6600 m³/h", function: "Funkcija: Učesnik u izradi projekta i puštanju mašine u rad" }
+        ]
+      },
+      {
+        id: 10, investor: "Investitor: RTB Bor - T.I.R. Bor/", projects: [
+          { project: "Projekat: Upravljači sistem livne mašine", function: "Funkcija: Parametrisanje frekventnih regulatora, izrada PLC I HMI aplikacije i puštanje u rad pogona za neutralizaciju otpadnih voda" }
+        ]
+      },
+      {
+        id: 11, investor: "Investitor: “ELIXIR PRAHOVO” D.O.O, Prahovo", projects: [
+          { project: "Projekat: DCS Upravljački sistem za MAP i MKF", function: "Funkcija: Izrada izvođačkog projekta" }
+        ]
+      },
+      {
+        id: 12, investor: "Investitor: RB Kolubara, Kalenić", projects: [
+          { project: "Projekat: Upravljački sistem rotornog bagera G900", function: "Funkcija: Puštanje u rad (parametrisanje frekventnih regulatora)" }
+        ]
+      },
+    ]
+  },
+  {
+    id: 4, name: "Dejan Živković", position: "Position 4", image: "../images/person.png", description: "Description number 4", listOfProjects: [
+      {
+        id: 1, investor: "Investitor: CRH Morava CEM Popovac", projects: [
+          { project: "Projekat: Rekonstrukcija kracera - portalnog strugača (portal scraper reclaimer)", function: "Funkcija: Vodeći inženjer softvera" },
+          { project: "Projekat: Zamena dela sistema transporta klinkera / PCS7 CEMAT", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
+          { project: "Projekat: Nadogradnja sistema transporta u pakeraju / PCS7 CEMAT", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
+          { project: "Projekat: Sistem toplih gasova / PCS7 CEMAT", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
+          { project: "Projekat: Sistem automatskog upravljanja na silosu filera mlina br.2. / PCS7 CEMAT", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
+          { project: "Projekat: Transport klinkera", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
+          { project: "Projekat: Revitalizacija upravljačkog sistema portalnog bagera i dva portalna odlagača", function: "Funkcija: Vodeći inženjer za softver - vođa tima - projektovanje, ispitivanje i puštanje u rad" },
+          { project: "Projekat: Upravljački sistem zone 200 - prevođenje na Cemat", function: "Funkcija: Vodeći inženjer za softver - ispitivanje i puštanje u rad" },
+        ]
+      },
+      {
+        id: 2, investor: "Investitor: Sunoko d.o.o. Pećinci", projects: [
+          { project: "Projekat: Upgrade i virtuelizacija PCS7 upravljačkog sistema", function: "Funkcija: Vodeći inženjer softvera" }
+        ]
+      },
+      {
+        id: 3, investor: "Investitor: Lafarge/Biospringer Senta", projects: [
+          { project: "Projekat: Upgrade i virtuelizacija PCS7 upravljačkog sistema", function: "Funkcija: Vodeći inženjer softvera" }
+        ]
+      },
+      {
+        id: 4, investor: "Investitor: Tigar Tyres", projects: [
+          { project: "Projekat: Upravljački sistem komore za grejanje kalupova", function: "Funkcija: Projekt menadžer" }
+        ]
+      },
+      {
+        id: 5, investor: "Investitor: JKP Naissus Niš", projects: [
+          { project: "Projekat: Sistem za daljinski nadzor parametara pumpne stanice Mokra / PLC, HMI, optička mreža", function: "Funkcija: Projekt menadžer" }
+        ]
+      },
+      {
+        id: 6, investor: "Investitor: PSA GmbH", projects: [
+          { project: "Projekat: Softver za mlin cementa za postrojenje u Engleskoj / PCS7 V9 CEMAT Minerals", function: "Funkcija: Softver inženjer" }
+        ]
+      },
+      {
+        id: 7, investor: "Investitor: PSA GmbH", projects: [
+          { project: "Projekat: Softver za mlin cementa za postrojenje u Engleskoj / PCS7 V9 CEMAT Minerals", function: "Funkcija: Softver inženjer" },
+          { project: "Projekat: Softver za mlin cementa za postrojenje u Gruziji / PCS7 V9 CEMAT Minerals", function: "Funkcija: Softver inženjer" }
+        ]
+      },
+      {
+        id: 8, investor: "Investitor: HBIS GROUP Srbija", projects: [
+          { project: "Projekat: Oduzimač rude br. 2", function: "Funkcija: Vodeći inženjer za softver - projektovanje, izrada, ispitivanje i puštanje u rad" },
+        ]
+      },
+      {
+        id: 9, investor: "Investitor: Lafarge/Biospringer Senta", projects: [
+          { project: "Projekat: Proširenje postrojenja (upravljački sistem sudova za ćelijski zid)", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
+          { project: "Projekat: Proširenje postrojenja (upravljački sistemi sudova finalnih proizvoda, sudova ćelijskog zida, postrojenja CIP-a, integracija UHT-a, izrada upravljačkog sistema filtera, CIP, izmene u postojećem sistemu)", function: "Funkcija: Vodeći inženjer za softver – projektovanje, izrada, ispitivanje i puštanje u rad" }
+        ]
+      },
+      {
+        id: 10, investor: "Investitor: Elektroprivreda Srbije - ogranak „TE-KO Kostolac“", projects: [
+          { project: "Projekat: FLSmidth, FLSmidth odlagač PA200/2000", function: "Funkcija: Vodeći inženjer za softver - projektovanje, izrada, ispitivanje i puštanje u rad" }
+        ]
+      }
+    ]
+  },
+  {
+    id: 5, name: "Darko Gajić", position: "Position 5", image: "../images/person.png", description: "Description number 5", listOfProjects: [
       {
         id: 1, investor: "Investitor: Biospringer Senta, Fabrika kvasca i ekstrakta kvasca (ex. Alltech Fermin)", projects: [
           { project: "Projekat: DCS pogona ekstrakta kvasca, sa migracijom PCS7 sa v.7.1 na v.8.2", function: "Funkcija: Rukovodilac projekta" },
@@ -183,165 +342,6 @@ export const listOfPersonalReferences = [
           { project: "Projekat: Upravljački sistem bagera 6600 m3/h", function: "Funkcija: Rukovodilac projekta" }
         ]
       },
-    ]
-  },
-  {
-    id: 3, name: "Zoran Tašin", position: "Position 3", image: "../images/person.png", description: "Description number 3", listOfProjects: [
-      {
-        id: 1, investor: "Investitor: Biospringer Senta, Fabrika kvasca i ekstrakta kvasca (ex. Alltech Fermin)", projects: [
-          { project: "Projekat: DCS pogona ekstrakta kvasca, sa migracijom PCS7 sa v.7.1 na v.8.2", function: "Funkcija: Izvršilac" },
-          { project: "Projekat: SCADA sistem za nadzor fabrike sa web interfejsom", function: "Funkcija: Rukovodilac projekta" },
-          { project: "Projekat:  Sistem za praćenje proizvodnje i upis u bazu podataka fabrike", function: "Funkcija: Rukovodilac projekta" },
-
-        ]
-      },
-      {
-        id: 2, investor: "Investitor: ELEX COMMERCE", projects: [
-          { project: "Projekat: SOLTARIS - Solid Target Irradiation System - sistem za ozračivanje čvrstih meta", function: "Funkcija: Rukovodilac projekta" }
-        ]
-      },
-      {
-        id: 3, investor: "Investitor: Sunoko d.o.o. PC Vrbas", projects: [
-          { project: "Projekat: DCS pogona kuvanja repe, kaskadno i kontinualno kuvanje (sa migracijom PCS7 sa v.7.1 na v.9.1)", function: "Funkcija: Izvršilac" }
-        ]
-      },
-      {
-        id: 4, investor: "Investitor: Sunoko d.o.o. Beograd, PC Pećinci", projects: [
-          { project: "Projekat: DCS PCS7 upravljački sistem Fabrike za odšećeravanje melase", function: "Funkcija: Izvršilac" }
-        ]
-      },
-      {
-        id: 5, investor: "Investitor:  Siemens d.o.o. Beograd, za “Fiat automobili Srbija” Kragujevac", projects: [
-          { project: "Projekat: DCS PCS7 upravljački sistem vrelovodne kotlarnice, ukupna snaga 181MW", function: "Funkcija: Izvršilac" }
-        ]
-      },
-    ]
-  },
-  {
-    id: 4, name: "Vladimir Pajović", position: "Position 4", image: "../images/person.png", description: "Description number 4", listOfProjects: [
-      {
-        id: 1, investor: "Investitor: JKP “SUBOTIČKA TOPLANA“, Subotica", projects: [
-          { project: "Projekat: Upravljački sistem vrelovodnog kotla 35MW, hidrauličke skretnice i vrelovodnog grejanja mazuta", function: "Funkcija: Izrada idejnog projekta, projekta za izvođenje i projekta izvedenog objekta" }
-        ]
-      },
-      {
-        id: 2, investor: "Investitor: Biospringder RS DOO, Senta", projects: [
-          { project: "Projekat: Upravljački sistem anhidro sušnice i klima komore", function: "Funkcija: Izrada izvođačkog projekta" }
-        ]
-      },
-      {
-        id: 3, investor: "Investitor: MG Mivela DOO, Trstenik", projects: [
-          { project: "Projekat: Upravljački sistem Fabrike mineralne mode", function: "Funkcija: Izrada izvođačkog projekta, PLC i HMI aplikacije i puštanje u rad" }
-        ]
-      },
-      {
-        id: 4, investor: "Investitor: PPT Inženjering DOO, Beograd", projects: [
-          { project: "Projekat: Upravljački sistem zaštitne mreže za hvatanje brodova na HE Đerdap II", function: "Funkcija: Izrada izvođačkog projekta" }
-        ]
-      },
-      {
-        id: 5, investor: "Investitor: HIP Petrohemija", projects: [
-          { project: "Projekat: Upravljački sistem DC spojnice za regulaciju brzine na ekstruderu", function: "Funkcija: Izrada projekta, PLC i HMI aplikacije" }
-        ]
-      },
-      {
-        id: 6, investor: "Investitor: HE “Potpeć“", projects: [
-          { project: "Projekat: Upravljački sistem Portalnog krana 100t/15t", function: "Funkcija: Puštanje mašine u rad (izrada PLC i HMI softvera i parametrisanje frekventnih regulatora)" }
-        ]
-      },
-      {
-        id: 7, investor: "Investitor: HESTEEL Serbia, Smederevo", projects: [
-          { project: "Projekat: Upravljački sistem Oduzimača rude (reclaimer)", function: "Funkcija: Učesnik u izradi projekta i puštanju mašine u rad (parametrifanje frekventnih regulatora)" }
-        ]
-      },
-      {
-        id: 8, investor: "Investitor: FLSmidth", projects: [
-          { project: "Projekat: Upravljački sistem odlagača (Spreader) 12000m³/h i 8500m³/h", function: "Funkcija: Učesnik u izradi projekta i puštanju mašine u rad" }
-        ]
-      },
-      {
-        id: 9, investor: "Investitor: Thyssenkrup Industrial Solutions", projects: [
-          { project: "Projekat: Upravljački sistem Rotornog bagera 6600 m³/h", function: "Funkcija: Učesnik u izradi projekta i puštanju mašine u rad" }
-        ]
-      },
-      {
-        id: 10, investor: "Investitor: RTB Bor - T.I.R. Bor/", projects: [
-          { project: "Projekat: Upravljači sistem livne mašine", function: "Funkcija: Parametrisanje frekventnih regulatora, izrada PLC I HMI aplikacije i puštanje u rad pogona za neutralizaciju otpadnih voda" }
-        ]
-      },
-      {
-        id: 11, investor: "Investitor: “ELIXIR PRAHOVO” D.O.O, Prahovo", projects: [
-          { project: "Projekat: DCS Upravljački sistem za MAP i MKF", function: "Funkcija: Izrada izvođačkog projekta" }
-        ]
-      },
-      {
-        id: 12, investor: "Investitor: RB Kolubara, Kalenić", projects: [
-          { project: "Projekat: Upravljački sistem rotornog bagera G900", function: "Funkcija: Puštanje u rad (parametrisanje frekventnih regulatora)" }
-        ]
-      },
-    ]
-  },
-  {
-    id: 5, name: "Dejan Živković", position: "Position 5", image: "../images/person.png", description: "Description number 5", listOfProjects: [
-      {
-        id: 1, investor: "Investitor: CRH Morava CEM Popovac", projects: [
-          { project: "Projekat: Rekonstrukcija kracera - portalnog strugača (portal scraper reclaimer)", function: "Funkcija: Vodeći inženjer softvera" },
-          { project: "Projekat: Zamena dela sistema transporta klinkera / PCS7 CEMAT", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
-          { project: "Projekat: Nadogradnja sistema transporta u pakeraju / PCS7 CEMAT", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
-          { project: "Projekat: Sistem toplih gasova / PCS7 CEMAT", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
-          { project: "Projekat: Sistem automatskog upravljanja na silosu filera mlina br.2. / PCS7 CEMAT", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
-          { project: "Projekat: Transport klinkera", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
-          { project: "Projekat: Revitalizacija upravljačkog sistema portalnog bagera i dva portalna odlagača", function: "Funkcija: Vodeći inženjer za softver - vođa tima - projektovanje, ispitivanje i puštanje u rad" },
-          { project: "Projekat: Upravljački sistem zone 200 - prevođenje na Cemat", function: "Funkcija: Vodeći inženjer za softver - ispitivanje i puštanje u rad" },
-        ]
-      },
-      {
-        id: 2, investor: "Investitor: Sunoko d.o.o. Pećinci", projects: [
-          { project: "Projekat: Upgrade i virtuelizacija PCS7 upravljačkog sistema", function: "Funkcija: Vodeći inženjer softvera" }
-        ]
-      },
-      {
-        id: 3, investor: "Investitor: Lafarge/Biospringer Senta", projects: [
-          { project: "Projekat: Upgrade i virtuelizacija PCS7 upravljačkog sistema", function: "Funkcija: Vodeći inženjer softvera" }
-        ]
-      },
-      {
-        id: 4, investor: "Investitor: Tigar Tyres", projects: [
-          { project: "Projekat: Upravljački sistem komore za grejanje kalupova", function: "Funkcija: Projekt menadžer" }
-        ]
-      },
-      {
-        id: 5, investor: "Investitor: JKP Naissus Niš", projects: [
-          { project: "Projekat: Sistem za daljinski nadzor parametara pumpne stanice Mokra / PLC, HMI, optička mreža", function: "Funkcija: Projekt menadžer" }
-        ]
-      },
-      {
-        id: 6, investor: "Investitor: PSA GmbH", projects: [
-          { project: "Projekat: Softver za mlin cementa za postrojenje u Engleskoj / PCS7 V9 CEMAT Minerals", function: "Funkcija: Softver inženjer" }
-        ]
-      },
-      {
-        id: 7, investor: "Investitor: PSA GmbH", projects: [
-          { project: "Projekat: Softver za mlin cementa za postrojenje u Engleskoj / PCS7 V9 CEMAT Minerals", function: "Funkcija: Softver inženjer" },
-          { project: "Projekat: Softver za mlin cementa za postrojenje u Gruziji / PCS7 V9 CEMAT Minerals", function: "Funkcija: Softver inženjer" }
-        ]
-      },
-      {
-        id: 8, investor: "Investitor: HBIS GROUP Srbija", projects: [
-          { project: "Projekat: Oduzimač rude br. 2", function: "Funkcija: Vodeći inženjer za softver - projektovanje, izrada, ispitivanje i puštanje u rad" },
-        ]
-      },
-      {
-        id: 9, investor: "Investitor: Lafarge/Biospringer Senta", projects: [
-          { project: "Projekat: Proširenje postrojenja (upravljački sistem sudova za ćelijski zid)", function: "Funkcija: Vodeći inženjer za softver - menadžer softverskog dela projekta" },
-          { project: "Projekat: Proširenje postrojenja (upravljački sistemi sudova finalnih proizvoda, sudova ćelijskog zida, postrojenja CIP-a, integracija UHT-a, izrada upravljačkog sistema filtera, CIP, izmene u postojećem sistemu)", function: "Funkcija: Vodeći inženjer za softver – projektovanje, izrada, ispitivanje i puštanje u rad" }
-        ]
-      },
-      {
-        id: 10, investor: "Investitor: Elektroprivreda Srbije - ogranak „TE-KO Kostolac“", projects: [
-          { project: "Projekat: FLSmidth, FLSmidth odlagač PA200/2000", function: "Funkcija: Vodeći inženjer za softver - projektovanje, izrada, ispitivanje i puštanje u rad" }
-        ]
-      }
     ]
   },
   {
