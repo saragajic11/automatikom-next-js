@@ -692,6 +692,7 @@ p {
   flex-direction: column;
   width: 30%;
   align-items: center;
+  margin-right: 10px;
 }
 #portfolio-content-container .title-container .title {
   font-size: 40px !important;
