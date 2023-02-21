@@ -5,7 +5,7 @@ const Contact = (req, res) => {
         port: 587,
         host: "cpanel.autom.mycpanel.rs",
         auth: {
-            user: 'office@automatikom.rs',
+            user: 'noreply@automatikom.rs',
             pass: process.env.NEXT_PUBLIC_PASSWORD,
         },
         secure: false,
@@ -13,7 +13,7 @@ const Contact = (req, res) => {
     });
 
     const mailData = {
-        from: 'office@automatikom.rs',
+        from: 'noreply@automatikom.rs',
         to: 'sara.gajic@lilly021.com',
         subject: `Kontakt Forma: ${req.body.subject}`,
         text: "Kontakt mail: " + req.body.email + "\n" + "Poruka: " + req.body.message,
