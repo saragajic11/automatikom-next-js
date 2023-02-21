@@ -761,6 +761,12 @@ p {
 #footer-container .top span.title {
   font-size: 22px;
 }
+#footer-container .top span a {
+  color: white;
+}
+#footer-container .top span a:hover {
+  color: aqua;
+}
 #footer-container .bottom {
   border-top: 0.003px solid white;
   height: 50px;

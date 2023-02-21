@@ -407,12 +407,12 @@ export const listOfPersonalReferences = [
     ]
   },
   {
-    id: 6, name: "Darja Lazić", position: "Position 6", image: "../images/person.png", description: "Description number 6", listOfProjects: [
+    id: 6, name: "Darja Lazić", position: "Position 6", image: "../images/person.png", description: "Master inženjer elektrotehnike", listOfProjects: [
 
     ]
   },
   {
-    id: 7, name: "Natalija Lazić", position: "Position 7", image: "../images/person.png", description: "Description number 7", listOfProjects: [
+    id: 7, name: "Natalija Lazić", position: "Prodaja", image: "../images/person.png", description: "Description number 10", listOfProjects: [
 
     ]
   }

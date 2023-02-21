@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
                 <div className="sertificates-container">
                     <span className="title">SERTIFIKATI</span>
-                    <span className="data">APR podaci</span>
+                    <span className="data"><a className="file-link" href={"/files/identifikacioni-list.pdf"}>Identifikacioni podaci kompanije</a></span>
                 </div>
             </div>
         </div>

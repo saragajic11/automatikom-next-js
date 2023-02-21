@@ -45,6 +45,14 @@
             &.title {
                 font-size: 22px;
             }
+
+            a {
+                color: white;
+                
+                &:hover {
+                    color: aqua;
+                }
+            }
         }
     }
 
