@@ -14,7 +14,7 @@ const Contact = (req, res) => {
 
     const mailData = {
         from: 'noreply@automatikom.rs',
-        to: 'sara.gajic@lilly021.com',
+        to: 'office@automatikom.rs',
         subject: `Kontakt Forma: ${req.body.subject}`,
         text: "Kontakt mail: " + req.body.email + "\n" + "Poruka: " + req.body.message,
     }
