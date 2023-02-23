@@ -1,10 +1,20 @@
 import PortfolioContent from "../components/PortfolioContent";
 import { Button } from "@mui/material";
 import { useRouter } from "next/router";
+import { useContext, useEffect } from "react";
+import LoaderContext from '../context/LoaderContext';
 
 const Portfolio = () => {
 
     const router = useRouter();
+    const { setLoading } = useContext(LoaderContext);
+
+    useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {
+          setLoading(false);
+        }, 3000);
+      }, [])
 
     const projects = [
         { id: 1, title: "SIEMENS", description: "Migracija S5 na S7 CCHBC Rosa Vlasina", imgSrc: "/images/prj-9.jpeg" },

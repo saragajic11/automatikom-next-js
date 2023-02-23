@@ -204,6 +204,30 @@ p {
   height: 650px;
   width: 100%;
 }
+#carousel-container .carousel-text {
+  position: absolute;
+  top: 80%;
+  right: 34%;
+  font-size: 60px;
+  z-index: 1000;
+  color: white;
+  font-weight: 400;
+}
+@media only screen and (max-width: 1600) {
+  #carousel-container .carousel-text {
+    right: 32%;
+  }
+}
+@media only screen and (max-width: 1300) {
+  #carousel-container .carousel-text {
+    right: 29%;
+  }
+}
+@media only screen and (max-width: 1000) {
+  #carousel-container .carousel-text {
+    right: 20%;
+  }
+}
 @media only screen and (max-width: 991px) {
   #carousel-container {
     height: 400px;
@@ -211,6 +235,9 @@ p {
   #carousel-container .carousel-image {
     height: 350px;
     width: 100%;
+  }
+  #carousel-container .carousel-text {
+    display: none;
   }
 }
 
