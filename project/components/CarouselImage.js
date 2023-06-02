@@ -2,10 +2,10 @@ import { Paper } from "@mui/material";
 
 const CarouselImage = ({ imageSrc }) => {
 
-    return <Paper>
+    return <div className="carousel-text-img-container">
         <img className="carousel-image" src={imageSrc} />
-        {/* <span className="carousel-text">The art of automation</span> */}
-    </Paper>
+        <span className="carousel-text">Umetnost automatizacije</span>
+    </div>
 
 }
 

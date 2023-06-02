@@ -51,6 +51,9 @@ const PersonalReferences = () => {
         <div className="content">
             <div className="img-container">
                 <img src={personalReference.image} />
+                <span className="email-address">{personalReference.email}</span>
+                <span className="phone-num">{personalReference.phoneNum}</span>
+
             </div>
             <div className="references-data-container">
                 {

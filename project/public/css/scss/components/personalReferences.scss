@@ -29,13 +29,24 @@
 
         .img-container {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             text-align: left;
             justify-content: left;
             width: 30%;
             img {
-                width: 300px;
-                height: 300px;
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+            }
+
+            .email-address {
+                margin-top: 20px;
+                font-size: 20px;
+            }
+
+            .phone-num {
+                margin-top: 5px;
+                font-size: 15px;
             }
         }
 

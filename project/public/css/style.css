@@ -85,6 +85,7 @@ p {
   padding-left: 50px;
   padding-right: 50px;
   align-items: center;
+  box-shadow: 0 6px 12px 0px rgba(5, 36, 81, 0.1);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -93,6 +94,7 @@ p {
   width: 50%;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 #header .header-logo-container .logo {
   width: 350px;
@@ -190,7 +192,7 @@ p {
   background-color: white;
   height: 700px;
 }
-#carousel-container .css-1ps6pg7-MuiPaper-root {
+#carousel-container .MuiPaper-root {
   box-shadow: none;
 }
 #carousel-container .css-1m9128y {
@@ -204,29 +206,18 @@ p {
   height: 650px;
   width: 100%;
 }
-#carousel-container .carousel-text {
+#carousel-container .carousel-text-img-container {
+  position: relative;
+  text-align: center;
+}
+#carousel-container .carousel-text-img-container span.carousel-text {
   position: absolute;
-  top: 80%;
-  right: 34%;
-  font-size: 60px;
-  z-index: 1000;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
   color: white;
-  font-weight: 400;
-}
-@media only screen and (max-width: 1600) {
-  #carousel-container .carousel-text {
-    right: 32%;
-  }
-}
-@media only screen and (max-width: 1300) {
-  #carousel-container .carousel-text {
-    right: 29%;
-  }
-}
-@media only screen and (max-width: 1000) {
-  #carousel-container .carousel-text {
-    right: 20%;
-  }
+  font-weight: 300;
 }
 @media only screen and (max-width: 991px) {
   #carousel-container {
@@ -350,6 +341,7 @@ p {
   align-items: center;
   perspective: 1000px;
   margin: 5px;
+  margin-bottom: 20px;
 }
 #card-container .card-inner {
   position: relative;
@@ -426,6 +418,14 @@ p {
     width: 200px;
     max-width: 100%;
   }
+  #card-container .card-inner .card-back span {
+    overflow: auto;
+    max-height: 200px;
+  }
+}
+#card-container img {
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 #card-container:hover .card-inner {
@@ -846,14 +846,23 @@ p {
 }
 #personal-references-container .content .img-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: left;
   justify-content: left;
   width: 30%;
 }
 #personal-references-container .content .img-container img {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+#personal-references-container .content .img-container .email-address {
+  margin-top: 20px;
+  font-size: 20px;
+}
+#personal-references-container .content .img-container .phone-num {
+  margin-top: 5px;
+  font-size: 15px;
 }
 #personal-references-container .content .references-data-container {
   display: flex;

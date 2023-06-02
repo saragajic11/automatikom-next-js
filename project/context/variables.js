@@ -1,6 +1,6 @@
 export const listOfPersonalReferences = [
   {
-    id: 1, name: "Zoran Tašin", position: "Position 1", image: "../images/person.png", description: "U skladu sa sportom kojim se bavio odlično pliva u softverskim vodama. Rad pod pritiskom je njegov alter ego. Pri tome nećete ni biti svesni da pritisak postoji. Njegova rešenja u automatizaciji su uvek korak ispred.", listOfProjects: [
+    id: 1, name: "Zoran Tašin", position: "Sektor inženjeringa", image: "../images/zoran.jpeg", description: "U skladu sa sportom kojim se bavio odlično pliva u softverskim vodama. Rad pod pritiskom je njegov alter ego. Pri tome nećete ni biti svesni da pritisak postoji. Njegova rešenja u automatizaciji su uvek korak ispred.", email: "zoran.tasin@automatikom.rs", phoneNum: "+381658339312", listOfProjects: [
       {
         id: 1, investor: "Investitor: Biospringer Senta, Fabrika kvasca i ekstrakta kvasca (ex. Alltech Fermin)", projects: [
           { project: "Projekat: DCS pogona ekstrakta kvasca, sa migracijom PCS7 sa v.7.1 na v.8.2", function: "Funkcija: Izvršilac" },
@@ -32,7 +32,7 @@ export const listOfPersonalReferences = [
     ]
   },
   {
-    id: 2, name: "Ivan Lazić", position: "Position 2", image: "../images/person.png", description: "Kada bi se znanje i predanost poslu merilo fizičkom konstitucijom, on bi bio pravi primer. Iako na oko strog probleme rešava smireno i opušteno. Reklo bi se da problem u stvari i ne postoji.", listOfProjects: [
+    id: 2, name: "Ivan Lazić", position: "Sektor inženjeringa", image: "../images/ivan.jpeg", description: "Kada bi se znanje i predanost poslu merilo fizičkom konstitucijom, on bi bio pravi primer. Iako na oko strog, probleme rešava smireno i opušteno. Reklo bi se da problem u stvari i ne postoji.", email: "ivan.lazic@automatikom.rs", phoneNum: "+381641209024", listOfProjects: [
       {
         id: 1, investor: "Investitor: LA FANTANA, Goč", projects: [
           { project: "Projekat: Upravljačko nadzorni sistem crpljenja vode i dopreme do nove fabrike", function: "Funkcija: Realizacija aplikativnog softvera, testiranje i puštanje u rad" }
@@ -150,7 +150,7 @@ export const listOfPersonalReferences = [
     ]
   },
   {
-    id: 3, name: "Vladimir Pajović", position: "Position 3", image: "../images/person.png", description: "Ako vam je potrebno da se reše bilo kakvi problemi u struci, ali i da se pobrine da na terenu ne ostanete gladni, pravi čovek za vas. Ne pravi kompromise sa polovičnim i lošim rešenjima, za njegove projekte kontrola skoro i nije potrebna.", listOfProjects: [
+    id: 3, name: "Vladimir Pajović", position: "Direktor", image: "../images/vlada.jpeg", description: "Ako vam je potrebno da se reše bilo kakvi problemi u struci, ali i da se pobrine da na terenu ne ostanete gladni, pravi čovek za vas. Ne pravi kompromise sa polovičnim i lošim rešenjima, za njegove projekte kontrola skoro i nije potrebna.", email: "vladimir.pajovic@automatikom.rs", phoneNum: "+381658292761", listOfProjects: [
       {
         id: 1, investor: "Investitor: JKP “SUBOTIČKA TOPLANA“, Subotica", projects: [
           { project: "Projekat: Upravljački sistem vrelovodnog kotla 35MW, hidrauličke skretnice i vrelovodnog grejanja mazuta", function: "Funkcija: Izrada idejnog projekta, projekta za izvođenje i projekta izvedenog objekta" }
@@ -214,7 +214,7 @@ export const listOfPersonalReferences = [
     ]
   },
   {
-    id: 4, name: "Dejan Živković", position: "Position 4", image: "../images/person.png", description: "Znanje,  posvećenost, rad i red.  Sintagma koja ga najbolje opisuje. O automatizaciji zna sve, a za nepoznato, zna gde da pročita. Neicrpan izvor korisnih informacija koje ne krije od onih kojima su potrebne.", listOfProjects: [
+    id: 4, name: "Dejan Živković", position: "Sektor inženjeringa", image: "../images/dejan.jpeg", description: "Znanje,  posvećenost, rad i red.  Sintagma koja ga najbolje opisuje. O automatizaciji zna sve, a za nepoznato, zna gde da pročita. Neiscrpan izvor korisnih informacija koje ne krije od onih kojima su potrebne.", email: "dejan.zivkovic@automatikom.rs", phoneNum: "+381641738471", listOfProjects: [
       {
         id: 1, investor: "Investitor: CRH Morava CEM Popovac", projects: [
           { project: "Projekat: Rekonstrukcija kracera - portalnog strugača (portal scraper reclaimer)", function: "Funkcija: Vodeći inženjer softvera" },
@@ -339,7 +339,7 @@ export const listOfPersonalReferences = [
     ]
   },
   {
-    id: 5, name: "Darko Gajić", position: "Position 5", image: "../images/person.png", description: "Elokventnost, upornost, sportski duh, muzikalnost, poliglota…Iako je inženjer po struci, dobro pliva u menadžerskim vodama. Glavni čovek za team building.", listOfProjects: [
+    id: 5, name: "Darko Gajić", position: "Sektor inženjeringa", image: "../images/darko.jpeg", description: "Elokventnost, upornost, sportski duh, muzikalnost, poliglota…Iako je inženjer po struci, dobro pliva u menadžerskim vodama. Glavni čovek za team building.", email: "darko.gajic@automatikom.rs", phoneNum: "+381658292763", listOfProjects: [
       {
         id: 1, investor: "Investitor: Biospringer Senta, Fabrika kvasca i ekstrakta kvasca (ex. Alltech Fermin)", projects: [
           { project: "Projekat: DCS pogona ekstrakta kvasca, sa migracijom PCS7 sa v.7.1 na v.8.2", function: "Funkcija: Rukovodilac projekta" },
@@ -407,12 +407,12 @@ export const listOfPersonalReferences = [
     ]
   },
   {
-    id: 6, name: "Darja Lazić", position: "Position 6", image: "../images/person.png", description: "Najmlađi član tima, gurnuta u vatru, što sa osmehom dočekuje. Prevashodno elektro projektant, ali po potrebi I marketing menadžer, prevodilac, donosilac novih ideja.", listOfProjects: [
+    id: 6, name: "Darja Lazić", position: "Sektor projektovanja", image: "../images/darja.jpeg", description: "Najmlađi član tima, gurnuta u vatru, što sa osmehom dočekuje. Prevashodno elektro projektant, ali po potrebi I marketing menadžer, prevodilac, donosilac novih ideja.", email: "darja.lazic@automatikom.rs", phoneNum: "+381652075919", listOfProjects: [
 
     ]
   },
   {
-    id: 7, name: "Natalija Lazić", position: "Prodaja", image: "../images/person.png", description: "Odgovorna, pedatna, uporna, posvećena poslu...Inženjer prodaje, ekonomista, komercijalista, drži sve pod kontrolom.", listOfProjects: [
+    id: 7, name: "Natalija Lazić", position: "Sektor prodaje", image: "../images/natalija.jpeg", description: "Odgovorna, pedantna, uporna, posvećena poslu...Inženjer prodaje, ekonomista, komercijalista, drži sve pod kontrolom.", email: "natalija.lazic@automatikom.rs", phoneNum: "+381658339313", listOfProjects: [
 
     ]
   }

@@ -3,7 +3,7 @@
 
     height: 700px;
 
-    .css-1ps6pg7-MuiPaper-root {
+    .MuiPaper-root {
         box-shadow: none;
     }
 
@@ -20,34 +20,18 @@
         width: 100%;
     }
 
-    .carousel-text {
-        position: absolute;
-        top: 80%;
-        right: 34%;
-        font-size: 60px;
-        z-index: 1000;
-        color: white;
-        font-weight: 400;
-    }
+    .carousel-text-img-container {
+        position: relative;
+        text-align: center;
 
-    @media only screen and (max-width: 1600) {
-
-        .carousel-text {
-            right: 32%;
-        }
-    }
-
-    @media only screen and (max-width: 1300) {
-
-        .carousel-text {
-            right: 29%;
-        }
-    }
-
-    @media only screen and (max-width: 1000) {
-
-        .carousel-text {
-            right: 20%;
+        span.carousel-text {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 55px;
+            color: white;
+            font-weight: 300;
         }
     }
 

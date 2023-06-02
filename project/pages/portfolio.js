@@ -19,7 +19,7 @@ const Portfolio = () => {
     const projects = [
         { id: 1, title: "SIEMENS", description: "Migracija S5 na S7 CCHBC Rosa Vlasina", imgSrc: "/images/prj-9.jpeg" },
         { id: 2, title: "BARRY CALLEBAUT", description: "Promena algoritma upravljanja splinker sistemom i integracija na PP fabrike", imgSrc: "/images/prj-8.png" },
-        { id: 3, title: "Moravacem DOO Popovac", description: "Rekonstrukcija upavljačkog  sistema izuzimača - kracera, izrada upravljačkog algoritma za zakošenje bagera", imgSrc: "/images/prj-7.png" },
+        { id: 3, title: "Moravacem DOO Popovac", description: "Rekonstrukcija upavljačkog sistema izuzimača - kracera, izrada upravljačkog algoritma za kontrolu zakošenja bagera", imgSrc: "/images/prj-7.png" },
         { id: 4, title: "JKP Subotička toplana", description: "Izrada projektne dokumentacije PZI za Upravljački sistem vrelovodnog grejanja mazuta, isporuka i postavljanje senzora vibracije na pumpne agragate i integracija na SCADA sistem, proširivanje pogonskih kapaciteta", imgSrc: "/images/prj-3.jpeg" },
         { id: 5, title: "Biospringer RS d.o.o.", description: "Integracija merača nivoa u fermetorima na upravljački sistem, rekonstrukcija upravljačkog sistema klima komora, izmena upravljačkog algoritma procedure doziranja tople vode u toplu bazu i kiselinu u pogonu CIP-a, ugradnja merača nivoa i protoka, povezivanje na lokaciju pripreme melase i reducir stanice, izrada dokumentacije izvedenog stanja industrijske Ethernet mreže u Fabrici ekstrakta kvasca, izrada WEB SCADA sistema", imgSrc: "/images/prj-2.png" },
         { id: 6, title: "Sunoko DOO PC Vrbas", description: "Migracija DCS upravljačkog sistema kuvanja PCS7 v.7.1 na v.9.1", imgSrc: "/images/prj-4.jpeg" },

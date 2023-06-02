@@ -61,7 +61,7 @@ const Header = () => {
     }
 
     return <div id={"header"} className={!isCollapsed ? "topnav responsive" : "topnav"}>
-        <div className={"header-logo-container"}>
+        <div className={"header-logo-container"} onClick={(e)=> handleNavItemClick(e, "home")}>
             <img className={"logo"} src={"/images/logo.png"} />
         </div>
         <div className={"header-nav-container"}>
