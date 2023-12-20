@@ -29,7 +29,7 @@ const Team = () => {
             <Card id={personalReferences[4]?.id} name={personalReferences[4]?.name} position={personalReferences[4]?.position} image={personalReferences[4]?.image} description={personalReferences[4]?.description}  />
             <Card id={personalReferences[5]?.id} name={personalReferences[5]?.name} position={personalReferences[5]?.position} image={personalReferences[5]?.image} description={personalReferences[5]?.description}  />
             <Card id={personalReferences[6]?.id} name={personalReferences[6]?.name} position={personalReferences[6]?.position} image={personalReferences[6]?.image} description={personalReferences[6]?.description}  />
-
+            <Card id={personalReferences[7]?.id} name={personalReferences[7]?.name} position={personalReferences[7]?.position} image={personalReferences[7]?.image} description={personalReferences[7]?.description}  />
         </div>
     </div>
 }

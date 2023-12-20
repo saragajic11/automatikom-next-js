@@ -415,5 +415,10 @@ export const listOfPersonalReferences = [
     id: 7, name: "Natalija Lazić", position: "Sektor prodaje", image: "../images/natalija.jpeg", description: "Odgovorna, pedantna, uporna, posvećena poslu...Inženjer prodaje, ekonomista, komercijalista, drži sve pod kontrolom.", email: "natalija.lazic@automatikom.rs", phoneNum: "+381658339313", listOfProjects: [
 
     ]
+  },
+  {
+    id: 8, name: "Filip Gagić", position: "Sektor inženjeringa", image: "../images/filip.png", description: "Mladi inženjeri, željni znanja i iskustva su uvek dobrodošli. Najmlađi član našeg tima, Filip, je vredan, druželjubiv i spreman za sve izazove koje budućnost donosi.", email: "filip.gagic@automatikom.rs" , phoneNum: "+381658292764", listOfProjects: [
+
+    ]
   }
 ]

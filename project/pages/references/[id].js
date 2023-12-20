@@ -29,6 +29,8 @@ const PersonalReferences = () => {
             setPersonalReference(personalReferences[5]);
         } else if (id == 7) {
             setPersonalReference(personalReferences[6]);
+        } else if(id == 8) {
+            setPersonalReference(personalReferences[7])
         }
     }
 
